@@ -1,0 +1,7 @@
+  <div class="branding"><a ng-href="#/">angularJS</a></div>
+  <ul>
+    <li><a ng-show="currentUser" ng-href="#/meetings">Meetings<span ng-show="howManyMeetings" class="badge">{{howManyMeetings}} </span></a></li>  
+    <li><a ng-hide="currentUser" ng-href="#/login">Login</a></li>
+    <li><a ng-hide="currentUser"  ng-href="#/register">Register</a></li>
+  </ul>
+<!--if there is a currentUser registered then it hides the login and register icons--and if u click logout it goes to login page with no state in currentUser>
